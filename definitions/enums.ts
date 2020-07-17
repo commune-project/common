@@ -1,0 +1,60 @@
+enum ActorTypes {
+  Actor = "Actor",
+  Person = "Person",
+  Group = "Group",
+  Service = "Service",
+  Application = "Application",
+}
+
+enum ActivityTypes {
+  Activity = "Activity",
+  Accept = "Accept",
+  Add = "Add",
+  Announce = "Announce",
+  Arrive = "Arrive",
+  Block = "Block",
+  Create = "Create",
+  Delete = "Delete",
+  Dislike = "Dislike",
+  Flag = "Flag",
+  Follow = "Follow",
+  Ignore = "Ignore",
+  Invite = "Invite",
+  Join = "Join",
+  Leave = "Leave",
+  Like = "Like",
+  Listen = "Listen",
+  Move = "Move",
+  Offer = "Offer",
+  Question = "Question",
+  Reject = "Reject",
+  Read = "Read",
+  Remove = "Remove",
+  TentativeReject = "TentativeReject",
+  TentativeAccept = "TentativeAccept",
+  Travel = "Travel",
+  Undo = "Undo",
+  Update = "Update",
+  View = "View",
+}
+
+enum ObjectTypes {
+  Object = "Object",
+  Article = "Article",
+  Audio = "Audio",
+  Document = "Document",
+  Event = "Event",
+  Image = "Image",
+  Note = "Note",
+  Page = "Page",
+  Place = "Place",
+  Profile = "Profile",
+  Relationship = "Relationship",
+  Tombstone = "Tombstone",
+  Video = "Video",
+  // Should it be there?
+  Link = "Link",
+  Mention = "Mention",
+}
+
+export { ActivityTypes, ActorTypes, ObjectTypes }

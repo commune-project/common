@@ -1,0 +1,33 @@
+{
+  "name": "commune-common",
+  "version": "0.0.1",
+  "description": "Common parts of Commune project.",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commune-project/common.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "ActivityPub"
+  ],
+  "author": "misaka4e21 <misaka4e21@rbq.press>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/commune-project/common/issues"
+  },
+  "homepage": "https://github.com/commune-project/common#readme",
+  "dependencies": {
+    "@types/node-fetch": "^2.5.7",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  }
+}
