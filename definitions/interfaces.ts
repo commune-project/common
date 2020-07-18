@@ -9,8 +9,9 @@ interface IObject {
   type?: keyof typeof ActorTypes | keyof typeof ActivityTypes | keyof typeof ObjectTypes
   url?: string
   actor?: string | IActor
-  published?: Date
-  updated?: Date
+  published?: Date | string
+  updated?: Date | string
+  [key: string]: any
 }
 
 interface IActor extends IObject {
@@ -31,6 +32,8 @@ interface IActor extends IObject {
     owner: string
     publicKeyPem: string
   }
+
+  [key: string]: any
 }
 
 interface IActivity {
@@ -42,10 +45,12 @@ interface IActivity {
   cc?: string | string[]
   bto?: string | string[]
   bcc?: string | string[]
+
+  [key: string]: any
 }
 
 function isASType<ET, IT>(et: { [id: string]: string}): ((x: any)=> x is IT) {
-  return (x: any): x is IT => x.type !== undefined && !!Object.getOwnPropertyNames.call(et, []).includes(x.type)
+  return (x: any): x is IT => x.type !== undefined && !!Object.getOwnPropertyNames(et).includes(x.type)
 }
 
 const isActor = isASType<ActorTypes, IActor>(ActorTypes)
