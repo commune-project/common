@@ -13,7 +13,8 @@
             "commune-common/*": [
                 "*"
             ]
-        }
+        },
+        "moduleResolution": "node"
     },
     "compileOnSave": false,
     "buildOnSave": false
