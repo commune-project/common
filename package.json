@@ -4,7 +4,7 @@
   "description": "Common parts of Commune project.",
   "main": "src/main.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest --detectOpenHandles --collectCoverage=true"
   },
   "repository": {
     "type": "git",
